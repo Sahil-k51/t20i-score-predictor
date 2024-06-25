@@ -13,7 +13,7 @@ cities = ['Colombo', 'Mirpur', 'Johannesburg', 'Dubai', 'Auckland', 'Cape Town',
 
 st.title('Cricket Score Predictor (1st Innings)')
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 with col1:
     batting_team = st.selectbox('Select batting team',sorted(teams))
@@ -22,7 +22,7 @@ with col2:
 
 city = st.selectbox('Select city',sorted(cities))
 
-col3,col4,col5 = st.beta_columns(3)
+col3,col4,col5 = st.columns(3)
 
 with col3:
     current_score = st.number_input('Current Score')
