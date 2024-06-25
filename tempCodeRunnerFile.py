@@ -7,52 +7,9 @@ from xgboost import XGBRegressor
 
 pipe = pickle.load(open('pipe.pkl','rb'))
 
-teams = ['Australia',
- 'India',
- 'Bangladesh',
- 'New Zealand',
- 'South Africa',
- 'England',
- 'West Indies',
- 'Afghanistan',
- 'Pakistan',
- 'Sri Lanka']
+teams = ['Australia', 'India', 'Bangladesh', 'New Zealand', 'South Africa', 'England', 'West Indies', 'Afghanistan', 'Pakistan', 'Sri Lanka']
 
-cities = ['Colombo',
- 'Mirpur',
- 'Johannesburg',
- 'Dubai',
- 'Auckland',
- 'Cape Town',
- 'London',
- 'Pallekele',
- 'Barbados',
- 'Sydney',
- 'Melbourne',
- 'Durban',
- 'St Lucia',
- 'Wellington',
- 'Lauderhill',
- 'Hamilton',
- 'Centurion',
- 'Manchester',
- 'Abu Dhabi',
- 'Mumbai',
- 'Nottingham',
- 'Southampton',
- 'Mount Maunganui',
- 'Chittagong',
- 'Kolkata',
- 'Lahore',
- 'Delhi',
- 'Nagpur',
- 'Chandigarh',
- 'Adelaide',
- 'Bangalore',
- 'St Kitts',
- 'Cardiff',
- 'Christchurch',
- 'Trinidad']
+cities = ['Colombo', 'Mirpur', 'Johannesburg', 'Dubai', 'Auckland', 'Cape Town', 'London', 'Pallekele', 'Barbados', 'Sydney', 'Melbourne', 'Durban', 'St Lucia', 'Wellington', 'Lauderhill', 'Hamilton', 'Centurion', 'Manchester', 'Abu Dhabi', 'Mumbai', 'Nottingham', 'Southampton', 'Mount Maunganui', 'Chittagong', 'Kolkata', 'Lahore', 'Delhi', 'Nagpur', 'Chandigarh', 'Adelaide', 'Bangalore', 'St Kitts', 'Cardiff', 'Christchurch', 'Trinidad']
 
 st.title('Cricket Score Predictor (1st Innings)')
 
