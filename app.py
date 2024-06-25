@@ -34,14 +34,13 @@ with col5:
 last_five = st.number_input('Runs scored in last 5 overs')
 
 if st.button('Predict Score'):
-    pass
-    # balls_left = 120 - (overs*6)
-    # wickets_left = 10 -wickets
-    # crr = current_score/overs
+    balls_left = 120 - (overs*6)
+    wickets_left = 10 -wickets
+    crr = current_score/overs
 
-    # input_df = pd.DataFrame(
-    #  {'batting_team': [batting_team], 'bowling_team': [bowling_team],'city':city, 'current_score': [current_score],'balls_left': [balls_left], 'wickets_left': [wickets], 'crr': [crr], 'last_five': [last_five]})
-    # result = pipe.predict(input_df)
-    # st.header("Predicted Score - " + str(int(result[0])))
+    input_df = pd.DataFrame(
+     {'batting_team': [batting_team], 'bowling_team': [bowling_team],'city':city, 'current_score': [current_score],'balls_left': [balls_left], 'wickets_left': [wickets], 'crr': [crr], 'last_five': [last_five]})
+    result = pipe.predict(input_df)
+    st.header("Predicted Score - " + str(int(result[0])))
 
 
